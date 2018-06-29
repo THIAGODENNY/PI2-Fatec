@@ -1,0 +1,132 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net45</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="InterfaceCadastro.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="InterfaceCadastro.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfaceCadastro.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.4.17" />
+    <PackageReference Include="PagedList" Version="1.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="InterfaceAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceCadastro.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfaceCadastro.resx</DependentUpon>
+    </Compile>
+    <Compile Update="InterfaceCadastroCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceCadastroCidades.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfaceCadastroCidades.resx</DependentUpon>
+    </Compile>
+    <Compile Update="InterfaceConsultaOrdensServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceConsultaOrdensServicos.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfaceConsultaOrdensServicos.resx</DependentUpon>
+    </Compile>
+    <Compile Update="InterfaceConsultaRota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceConsultaRota.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfaceConsultaRota.resx</DependentUpon>
+    </Compile>
+    <Compile Update="InterfaceLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceLogin.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfaceLogin.resx</DependentUpon>
+    </Compile>
+    <Compile Update="InterfacePasswordAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfacePasswordAdmin.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfacePasswordAdmin.resx</DependentUpon>
+    </Compile>
+    <Compile Update="InterfaceXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="InterfaceXML.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InterfaceXML.resx</DependentUpon>
+    </Compile>
+    <Compile Update="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MenuPrincipal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MenuPrincipal.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="InterfaceCadastroCidades.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfaceCadastroCidades.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InterfaceConsultaOrdensServicos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfaceConsultaOrdensServicos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InterfaceConsultaRota.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfaceConsultaRota.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InterfaceLogin.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfaceLogin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InterfacePasswordAdmin.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfacePasswordAdmin.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="InterfaceXML.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InterfaceXML.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MenuPrincipal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MenuPrincipal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
